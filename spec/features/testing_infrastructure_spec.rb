@@ -1,5 +1,5 @@
-feature "the homepage" do
-  it 'is testable' do
+feature "Testing infrastructure" do
+  scenario 'Can run app and check page content' do
     visit '/'
     expect(page).to have_content('Hello my vicious and petulant audience! IT is TIME! For BATTLE!')
   end
