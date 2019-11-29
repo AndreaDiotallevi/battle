@@ -18,12 +18,6 @@ describe Player do
     end 
   end
 
-  describe "#attack" do
-    it "should return the reduced hit points of the attacked player" do
-      expect(player_1.attack(player_2)).to eq Player::DEFAULT_HIT_POINTS - Player::DEFAULT_HIT_DAMAGE
-    end
-  end
-
   describe "#receive_damage" do
     it "should reduce the player's hit points by 10" do
       expect { player_2.receive_damage }.to change { player_2.hit_points }.by -Player::DEFAULT_HIT_DAMAGE
