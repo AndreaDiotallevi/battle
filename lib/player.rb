@@ -1,5 +1,6 @@
 class Player
   DEFAULT_HIT_POINTS = 60
+  DEFAULT_HIT_DAMAGE = 10
 
   attr_reader :name, :hit_points
 
@@ -13,7 +14,7 @@ class Player
   end
 
   def receive_damage
-    @hit_points -= 10
+    @hit_points -= DEFAULT_HIT_DAMAGE
   end
 
 end
